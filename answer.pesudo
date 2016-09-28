@@ -1,1 +1,10 @@
-# Hiver 
+# Hiver Generate Random Number
+var name = "Aman";
+var genNum; 
+$(document).ready(function() { genRandomNumber(name); });
+function genRandomNumber(name){ 
+  var start = 6;
+  var end = 15;
+  genNum = Math.floor(Math.random() * (end - start + 1)) + start;
+  console.log(name + " " + genNum);
+}
